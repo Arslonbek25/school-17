@@ -1,0 +1,28 @@
+.nav {
+    background: #FFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 7px 28px;
+    z-index: 10;
+
+    &__logo {
+        height: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav .btn {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .nav .btn:first-child {
+        display: none;
+    }
+}

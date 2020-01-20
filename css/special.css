@@ -1,0 +1,25 @@
+#scroll-up {
+  background: #3762f0;
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000000;
+}
+
+#scroll-up img {
+  width: 15px;
+  height: 24px;
+}
+
+@media (max-width: 767px) {
+  #scroll-up {
+    bottom: 30px;
+    right: 30px;
+  }
+}

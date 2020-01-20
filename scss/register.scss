@@ -1,0 +1,73 @@
+.register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #e1e7fb;
+    padding: 100px 5% 0 5%;
+
+    &__form,
+    &__info {
+        width: 45%;
+    }
+
+    &__form {
+        background: #FFF;
+        padding: 40px;
+        margin-bottom: 100px;
+    }
+
+    &__form-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    &__info-title {
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: rgba(0, 0, 0, .8);
+    }
+
+    &__info p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #5a5a5a;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid #ebebeb;
+        height: 40px;
+        padding: 0 20px;
+        color: rgba(0, 0, 0, .25);
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: rgba(0, 0, 0, .25);
+        transition: .2s all ease;
+
+        &:focus {
+            background: #fff;
+            border-color: #80bdff;
+            color: #495057;
+            outline: 0;
+            box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+        }
+    }
+
+    .send {
+        width: 100%;
+    }
+}
+
+@media (max-width: 906px) {
+    .register .register__form {
+        width: 100%;
+    }
+
+    .register .register__info {
+        width: 100%;
+    }
+}

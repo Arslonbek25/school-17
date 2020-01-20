@@ -1,0 +1,40 @@
+.counts {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+
+    &__content {
+        padding: 30px;
+        border: 1px solid #ebebeb;
+        border-radius: 6px;
+
+        // &:not(:last-child) {
+        //     margin-right: 30px;
+        // }
+    }
+
+    &__count {
+        font-size: 36px;
+        margin-bottom: 5px;
+        color: #3762f0;
+    }
+
+    &__description {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@media (max-width: 1024px) {
+    .counts .counts__content {
+        width: 34%;
+    }
+}
+
+@media (max-width: 550px) {
+    .counts .counts__content {
+        width: 60%;
+    }
+}
