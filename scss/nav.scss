@@ -12,11 +12,22 @@
     z-index: 10;
 
     &__logo {
-        height: 15px;
+        color: #2D2D2D;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav .nav__logo {
+        font-size: 25px;
     }
 }
 
 @media (max-width: 550px) {
+    .nav .nav__logo {
+        font-size: 22px;
+    }
+
     .nav .btn {
         font-size: 12px;
         padding: 0 10px;
