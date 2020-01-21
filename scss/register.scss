@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     background: #e1e7fb;
-    padding: 100px 5% 0 5%;
+    padding: 100px 5%;
 
     &__form,
     &__info {
@@ -14,7 +14,6 @@
     &__form {
         background: #FFF;
         padding: 40px;
-        margin-bottom: 100px;
     }
 
     &__form-title {
@@ -34,7 +33,14 @@
         color: #5a5a5a;
     }
 
-    &__input {
+    &__text {
+        padding: 10px 20px !important;
+        min-height: 60px;
+        resize: vertical;
+    }
+
+    &__input,
+    &__text {
         display: block;
         width: 100%;
         border-radius: 6px;
@@ -63,11 +69,15 @@
 }
 
 @media (max-width: 906px) {
+    .register {
+        padding: 0;
+    }
+    
     .register .register__form {
         width: 100%;
     }
 
     .register .register__info {
-        width: 100%;
+        display: none;
     }
 }

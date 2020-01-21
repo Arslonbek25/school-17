@@ -9,10 +9,6 @@
         padding: 30px;
         border: 1px solid #ebebeb;
         border-radius: 6px;
-
-        // &:not(:last-child) {
-        //     margin-right: 30px;
-        // }
     }
 
     &__count {
@@ -30,6 +26,7 @@
 @media (max-width: 1024px) {
     .counts .counts__content {
         width: 34%;
+        margin-bottom: 40px;
     }
 }
 

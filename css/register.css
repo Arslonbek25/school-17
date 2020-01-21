@@ -4,7 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   background: #e1e7fb;
-  padding: 100px 5% 0 5%;
+  padding: 100px 5%;
 }
 
 .register__form, .register__info {
@@ -14,7 +14,6 @@
 .register__form {
   background: #FFF;
   padding: 40px;
-  margin-bottom: 100px;
 }
 
 .register__form-title {
@@ -34,7 +33,13 @@
   color: #5a5a5a;
 }
 
-.register__input {
+.register__text {
+  padding: 10px 20px !important;
+  min-height: 60px;
+  resize: vertical;
+}
+
+.register__input, .register__text {
   display: block;
   width: 100%;
   border-radius: 6px;
@@ -49,7 +54,7 @@
   transition: .2s all ease;
 }
 
-.register__input:focus {
+.register__input:focus, .register__text:focus {
   background: #fff;
   border-color: #80bdff;
   color: #495057;
@@ -62,10 +67,13 @@
 }
 
 @media (max-width: 906px) {
+  .register {
+    padding: 0;
+  }
   .register .register__form {
     width: 100%;
   }
   .register .register__info {
-    width: 100%;
+    display: none;
   }
 }

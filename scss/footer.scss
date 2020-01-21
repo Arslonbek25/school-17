@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    background: #1D2331;
+    justify-content: space-evenly;
+    padding: 50px 20px;
+    color: #FFF;
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        width: 40%;
+
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    &__social img,
+    &__contacts img {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+
+    &__social a,
+    &__contacts a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 610px) {
+    .footer .footer__text {
+        font-size: 12px;
+    }
+}
