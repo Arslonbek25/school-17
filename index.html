@@ -12,14 +12,13 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/counts.css">
-    <link rel="stylesheet" href="css/tutors.css">
+    <link rel="stylesheet" href="css/school.css">
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/special.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/map.css">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 
@@ -27,6 +26,7 @@
 </head>
 
 <body>
+    <!-- SCROLL TO TOP BUTTON -->
     <button id="scroll-up"><img src="img/core/angle-up.svg"></button>
     <!-- NAVIGATION -->
     <nav class="nav noselect">
@@ -54,13 +54,8 @@
         <div class="counts__content">
             <img src="img/core/star.png" class="counts__img">
             <h4 class="counts__count">80</h4>
-            <p class="counts__description">Доверенныё учителя</p>
+            <p class="counts__description">Доверенные учителя</p>
         </div>
-        <!-- <div class="counts__content">
-            <img src="img/core/events.png" class="counts__img">
-            <h4 class="counts__count">89</h4>
-            <p class="counts__description">События</p>
-        </div> -->
         <div class="counts__content">
             <img src="img/core/earth.png" class="counts__img">
             <h4 class="counts__count">17</h4>
@@ -68,60 +63,18 @@
         </div>
     </section>
     <!-- TUTORS -->
-    <section class="tutors noselect">
-        <h3 class="tutors__heading">Наши учителя</h3>
+    <section class="school noselect">
+        <h3 class="school__heading">Наша Школа</h3>
 
-        <div class="tutors__carousel owl-carousel owl-theme">
-            <div class="tutors__tutor">
-                <div class="tutors__thumbnail">
-                    <img src="img/bg/t1.png" class="tutors__img">
-                </div>
-                <div class="tutors__information">
-                    <h4 class="tutors__name">Mr Niger</h4>
-                    <p class="tutors__job">Teacher</p>
-                    <p class="tutors__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, doloribus?</p>
-                </div>
-            </div>
-            <div class="tutors__tutor">
-                <div class="tutors__thumbnail">
-                    <img src="img/bg/t2.png" class="tutors__img">
-                </div>
-                <div class="tutors__information">
-                    <h4 class="tutors__name">Alex Parker</h4>
-                    <p class="tutors__job">Teacher</p>
-                    <p class="tutors__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, doloribus?</p>
-                </div>
-            </div>
-            <div class="tutors__tutor">
-                <div class="tutors__thumbnail">
-                    <img src="img/bg/t3.png" class="tutors__img">
-                </div>
-                <div class="tutors__information">
-                    <h4 class="tutors__name">Alex Parker</h4>
-                    <p class="tutors__job">Teacher</p>
-                    <p class="tutors__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, doloribus?</p>
-                </div>
-            </div>
-            <div class="tutors__tutor">
-                <div class="tutors__thumbnail">
-                    <img src="img/bg/t4.png" class="tutors__img">
-                </div>
-                <div class="tutors__information">
-                    <h4 class="tutors__name">Alex Parker</h4>
-                    <p class="tutors__job">Teacher</p>
-                    <p class="tutors__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, doloribus?</p>
-                </div>
-            </div>
-            <div class="tutors__tutor">
-                <div class="tutors__thumbnail">
-                    <img src="img/bg/t5.png" class="tutors__img">
-                </div>
-                <div class="tutors__information">
-                    <h4 class="tutors__name">Alex Parker</h4>
-                    <p class="tutors__job">Teacher</p>
-                    <p class="tutors__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, doloribus?</p>
-                </div>
-            </div>
+        <div class="fotorama" data-keyboard="true" data-loop="true" data-arrows="true" data-nav="thumbs" data-allowfullscreen="native" data-autoplay="3000" data-autoplay="true">
+            <img src="img/slider/1.jpg">
+            <img src="img/slider/2.jpg">
+            <img src="img/slider/3.jpg">
+            <img src="img/slider/4.jpg">
+            <img src="img/slider/5.jpg">
+            <img src="img/slider/6.jpg">
+            <img src="img/slider/7.jpg">
+            <img src="img/slider/8.jpg">
         </div>
     </section>
     <!-- REGISTER -->
@@ -132,7 +85,7 @@
             <input class="register__input" type="text" placeholder="Фамилия" id="surname">
             <input class="register__input" type="number" placeholder="Возраст" id="age">
             <input class="register__input" type="text" placeholder="Телефон" id="phone">
-            <textarea class="register__text" placeholder="Соощение" id="message"></textarea>
+            <textarea class="register__text" placeholder="Сообщение" id="message"></textarea>
             <button class="send btn btn--secondary">Отправить сообщение</button>
         </form>
         <div class="register__info">
@@ -153,7 +106,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
             <div class="footer__social">
-                <a href="#"><img src="img/core/telegram.svg" class="tutors__img"></a>
+                <a href="#"><img src="img/core/telegram.svg" class="school__img"></a>
             </div>
         </div>
         <div class="footer__content">
@@ -165,7 +118,7 @@
     </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script src="js/script.js"></script>
 </body>
 

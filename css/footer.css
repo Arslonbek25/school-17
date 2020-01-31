@@ -42,4 +42,10 @@
   .footer .footer__text {
     font-size: 12px;
   }
+  .footer__contacts a {
+    font-size: 10px;
+  }
+  .footer__text {
+    max-width: 100%;
+  }
 }

@@ -1,0 +1,14 @@
+.school {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.school__heading {
+  font-size: 30px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.school .fotorama__wrap {
+  margin: 0 auto;
+}

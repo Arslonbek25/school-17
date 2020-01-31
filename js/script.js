@@ -1,32 +1,3 @@
-$(document).ready(function() {
-    $('#scroll-up').click(function() {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 600);
-        return false;
-    });
-
-    $('.owl-carousel').owlCarousel({
-        nav: true,
-        center: true,
-        loop: true,
-        margin: 20,
-        responsive: {
-            0: {
-                items: 1
-            },
-
-            425: {
-                items: 2
-            },
-
-            600: {
-                items: 3
-            }
-        }
-    });
-});
-
 $('.send').click((e) => {
     let data = {
         name: $('#name').val(),
@@ -36,7 +7,7 @@ $('.send').click((e) => {
         message: $('#message').val()
     }
 
-    if (localStorage.getItem('lastSend') + 10 > new Date().getMinutes()) {
+    if (localStorage.getItem('minute') + 10 > new Date().getMinutes() && localStorage.getItem('hour') == new Date().getHours()) {
         alert('Вы отправляете слишком много запросов, подождите несколько минут, прежде чем отправлять новый');
         return false;
     } else if (data.name <= 3 || data.surname <= 3 || age <= 6 && data.age >= 16 || data.phone < 10) {
@@ -58,5 +29,6 @@ $('.send').click((e) => {
     xhttp.open('GET', url, true);
     xhttp.send();
 
-    localStorage.setItem('lastSend', new Date().getMinutes());
+    localStorage.setItem('minute', new Date().getMinutes());
+    localStorage.setItem('hour', new Date().getHours());
 });
