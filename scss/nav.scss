@@ -15,6 +15,10 @@
         color: #2D2D2D;
         font-size: 30px;
     }
+
+    &--scrolled {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+    }
 }
 
 @media (max-width: 768px) {

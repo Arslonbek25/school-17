@@ -32,3 +32,10 @@ $('.send').click((e) => {
     localStorage.setItem('minute', new Date().getMinutes());
     localStorage.setItem('hour', new Date().getHours());
 });
+
+$('body').on('scroll', function() {
+    if($('body').scrollTop() > 50) {
+        $('.nav').addClass('nav--scrolled');
+    } else 
+    $('.nav').removeClass('nav--scrolled');
+});
