@@ -19,7 +19,6 @@
 
     &__text {
         font-size: 14px;
-        max-width: 80%;
         margin-bottom: 20px;
     }
 
@@ -40,14 +39,21 @@
 
 @media (max-width: 610px) {
     .footer .footer__text {
-        font-size: 12px;
+        font-size: 11px;
+    }
+
+    .footer__contacts img {
+        width: 10px;
+        height: 10px;
     }
 
     .footer__contacts a {
         font-size: 10px;
     }
+}
 
+@media (min-width: 900px) {
     .footer__text {
-        max-width: 100%;
+        max-width: 80%;
     }
 }
