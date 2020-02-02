@@ -1,9 +1,9 @@
 .header {
-  background: url("../img/bg/header.jpg") no-repeat center/cover;
+  background: url("../img/bg/school.jpg") no-repeat center/cover;
   position: relative;
   display: flex;
   z-index: 2;
-  height: 400px;
+  height: 600px;
   overflow: hidden;
   background-attachment: fixed;
   justify-content: center;
